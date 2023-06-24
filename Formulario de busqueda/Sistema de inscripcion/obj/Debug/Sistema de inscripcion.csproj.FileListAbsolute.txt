@@ -1,0 +1,11 @@
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\bin\Debug\Sistema de inscripcion.exe.config
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\bin\Debug\Sistema de inscripcion.exe
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\bin\Debug\Sistema de inscripcion.pdb
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.csproj.AssemblyReference.cache
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.csproj.SuggestedBindingRedirects.cache
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema_de_inscripcion.Sistema.resources
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema_de_inscripcion.Properties.Resources.resources
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.csproj.GenerateResource.cache
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.csproj.CoreCompileInputs.cache
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.exe
+C:\Users\rapto\OneDrive\Documentos\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\Sistema de inscripcion\obj\Debug\Sistema de inscripcion.pdb
