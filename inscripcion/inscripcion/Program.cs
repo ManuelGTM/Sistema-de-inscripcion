@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace inscripcion
+namespace Sistema_de_inscripcion
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace inscripcion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new Sistema());
         }
     }
 }
