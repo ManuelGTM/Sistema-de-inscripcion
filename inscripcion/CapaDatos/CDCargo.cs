@@ -18,10 +18,16 @@ namespace CapaDatos
         private string Cargo;
         private string Estado;
 
+        // Creacion de un constructor vacío
+
+        public CDCargo() 
+        { 
+        
+        }
 
         //Creacion del constructor de la clase 
 
-        CDCargo(int IdCargo, string Cargo, string Estado) 
+        public CDCargo(int IdCargo, string Cargo, string Estado) 
         {
             this.IdCargo = IdCargo;
             this.Cargo = Cargo;
@@ -130,6 +136,30 @@ namespace CapaDatos
         }
 
 
+        public string DataTableCargo(string miparametro)
+        {
+            DataTable dt = new DataTable(); // Creacion de la tabla que muestra el cargo
+            SqlDataReader leerDatos; //Creacion del data Reader
 
+            try
+            {
+                SqlCommand sqlCmd = new SqlCommand(); //Establece un comando
+                sqlCmd.Connection = new Sistema_Conexion().dbconexion;//Conexion que usara el comando
+                sqlCmd.Connection.Open();// Abrir la base de datos
+                sqlCmd.CommandText = "CargoConsultar"; //Nombre de proc. Almacenado
+                sqlCmd.CommandType = CommandType.StoredProcedure; // Se trata de un Proc. Almacenado
+                sqlCmd.Parameters.AddWithValue("@pvalor", miparametro); // Se pasa el valor a buscar 
+                leerDatos = sqlCmd.ExecuteReader(); // Lenamos el data reader con los datos resultantes
+                dt.Load(leerDatos); // Se cargan los registros devueltos al DataTable
+                sqlCmd.Connection.Close(); // Se cierra la conexion
+            }
+            catch (Exception e)
+            {
+                dt = null; //si ocurre un erro se anula el DataTable
+            }
+           
+
+            return $"{dt}";
+        }
     }
 }
