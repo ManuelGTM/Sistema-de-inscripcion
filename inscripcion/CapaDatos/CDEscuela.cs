@@ -94,7 +94,7 @@ namespace CapaDatos
 
 
 
-            public string ActualizarCargo(CDEscuela objEscuela)
+            public string ActualizarEscuela(CDEscuela objEscuela)
             {
 
                 string mensaje = "";

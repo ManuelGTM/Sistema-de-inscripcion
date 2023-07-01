@@ -64,7 +64,6 @@
     <Compile Include="CDInscripcion.cs" />
     <Compile Include="CDTutor.cs" />
     <Compile Include="CDUsuario.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="CDPeriodo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sistema_Conexion.cs" />
