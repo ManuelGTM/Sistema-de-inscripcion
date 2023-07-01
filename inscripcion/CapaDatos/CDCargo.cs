@@ -54,9 +54,7 @@ namespace CapaDatos
             get { return Estado; }
             set { Estado = value; }
         }
-
-        public object SqlCon { get; private set; }
-
+ 
         public string InsertarCargo(CDCargo objCargo)
         {
 

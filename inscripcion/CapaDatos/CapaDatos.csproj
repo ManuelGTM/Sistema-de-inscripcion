@@ -58,7 +58,14 @@
   <ItemGroup>
     <Compile Include="CDCargo.cs" />
     <Compile Include="CDCurso.cs" />
+    <Compile Include="CDEmpleado.cs" />
+    <Compile Include="CDEscuela.cs" />
+    <Compile Include="CDEstudiante.cs" />
+    <Compile Include="CDInscripcion.cs" />
+    <Compile Include="CDTutor.cs" />
+    <Compile Include="CDUsuario.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="CDPeriodo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sistema_Conexion.cs" />
   </ItemGroup>
