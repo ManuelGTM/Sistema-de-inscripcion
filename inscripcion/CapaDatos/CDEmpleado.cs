@@ -70,15 +70,15 @@ namespace CapaDatos
                     sqlCon.Open();
                     micomando.CommandType = CommandType.StoredProcedure;
 
-                    micomando.Parameters.AddWithValue("@pIdEmpleado", objEmpleado.IdEmpleado);
-                    micomando.Parameters.AddWithValue("@pNombre", objEmpleado.Nombre);
-                    micomando.Parameters.AddWithValue("@pApellidos", objEmpleado.Apellidos);
-                    micomando.Parameters.AddWithValue("@pCedula", objEmpleado.Cedula);
-                    micomando.Parameters.AddWithValue("@pTelefono", objEmpleado.Telefono);
-                    micomando.Parameters.AddWithValue("@pDireccion", objEmpleado.Direccion);
-                    micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado.IdDepartamento);
-                    micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado.IdCargo);
-                    micomando.Parameters.AddWithValue("@pEstado", objEmpleado.Estado);
+                    micomando.Parameters.AddWithValue("@pIdEmpleado", objEmpleado._IdEmpleado);
+                    micomando.Parameters.AddWithValue("@pNombre", objEmpleado._Nombre);
+                    micomando.Parameters.AddWithValue("@pApellidos", objEmpleado._Apellidos);
+                    micomando.Parameters.AddWithValue("@pCedula", objEmpleado._Cedula);
+                    micomando.Parameters.AddWithValue("@pTelefono", objEmpleado._Telefono);
+                    micomando.Parameters.AddWithValue("@pDireccion", objEmpleado._Direccion);
+                    micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado._IdDepartamento);
+                    micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado._IdCargo);
+                    micomando.Parameters.AddWithValue("@pEstado", objEmpleado._Estado);
 
                     mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                                  : "No se pudo insertar correctamente los nuevos datos";
@@ -112,15 +112,15 @@ namespace CapaDatos
                         SqlCommand micomando = new SqlCommand("EmpleadoActualizar", sqlCon);
                         sqlCon.Open();
 
-                        micomando.Parameters.AddWithValue("@pIdEmpleado", objEmpleado.IdEmpleado);
-                        micomando.Parameters.AddWithValue("@pNombre", objEmpleado.Nombre);
-                        micomando.Parameters.AddWithValue("@pApellidos", objEmpleado.Apellidos);
-                        micomando.Parameters.AddWithValue("@pCedula", objEmpleado.Cedula);
-                        micomando.Parameters.AddWithValue("@pTelefono", objEmpleado.Telefono);
-                        micomando.Parameters.AddWithValue("@pDireccion", objEmpleado.Direccion);
-                        micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado.IdDepartamento);
-                        micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado.IdCargo);
-                        micomando.Parameters.AddWithValue("@pEstado", objEmpleado.Estado);
+                        micomando.Parameters.AddWithValue("@pIdEmpleado", objEmpleado._IdEmpleado);
+                        micomando.Parameters.AddWithValue("@pNombre", objEmpleado._Nombre);
+                        micomando.Parameters.AddWithValue("@pApellidos", objEmpleado._Apellidos);
+                        micomando.Parameters.AddWithValue("@pCedula", objEmpleado._Cedula);
+                        micomando.Parameters.AddWithValue("@pTelefono", objEmpleado._Telefono);
+                        micomando.Parameters.AddWithValue("@pDireccion", objEmpleado._Direccion);
+                        micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado._IdDepartamento);
+                        micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado._IdCargo);
+                        micomando.Parameters.AddWithValue("@pEstado", objEmpleado._Estado);
 
                         mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                                      :"No se pudo actualizar correctamente los nuevos datos";

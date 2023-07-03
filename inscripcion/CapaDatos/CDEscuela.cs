@@ -64,13 +64,13 @@ namespace CapaDatos
                     sqlCon.Open();
                     micomando.CommandType = CommandType.StoredProcedure;
 
-                    micomando.Parameters.AddWithValue("@pIdEscuela", objEscuela.IdEscuela);
-                    micomando.Parameters.AddWithValue("@pNombre", objEscuela.Nombre);
-                    micomando.Parameters.AddWithValue("@pDistritoEducativo", objEscuela.DistritoEducativo);
-                    micomando.Parameters.AddWithValue("@pRegional", objEscuela.Regional);
-                    micomando.Parameters.AddWithValue("@pCodigoMinerd", objEscuela.CodigoMinerd);
-                    micomando.Parameters.AddWithValue("@pDirector", objEscuela.Director);
-                    micomando.Parameters.AddWithValue("@pEstado", objEscuela.Estado);
+                    micomando.Parameters.AddWithValue("@pIdEscuela", objEscuela._IdEscuela);
+                    micomando.Parameters.AddWithValue("@pNombre", objEscuela._Nombre);
+                    micomando.Parameters.AddWithValue("@pDistritoEducativo", objEscuela._DistritoEducativo);
+                    micomando.Parameters.AddWithValue("@pRegional", objEscuela._Regional);
+                    micomando.Parameters.AddWithValue("@pCodigoMinerd", objEscuela._CodigoMinerd);
+                    micomando.Parameters.AddWithValue("@pDirector", objEscuela._Director);
+                    micomando.Parameters.AddWithValue("@pEstado", objEscuela._Estado);
 
                     mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                                  : "No se pudo insertar correctamente los nuevos datos";
@@ -107,13 +107,13 @@ namespace CapaDatos
                     SqlCommand micomando = new SqlCommand("EscuelaActualizar", sqlCon);
                     sqlCon.Open();
 
-                    micomando.Parameters.AddWithValue("@pIdEscuela", objEscuela.IdEscuela);
-                    micomando.Parameters.AddWithValue("@pNombre", objEscuela.Nombre);
-                    micomando.Parameters.AddWithValue("@pDistritoEducativo", objEscuela.DistritoEducativo);
-                    micomando.Parameters.AddWithValue("@pRegional", objEscuela.Regional);
-                    micomando.Parameters.AddWithValue("@pCodigoMinerd", objEscuela.CodigoMinerd);
-                    micomando.Parameters.AddWithValue("@pDirector", objEscuela.Director);
-                    micomando.Parameters.AddWithValue("@pEstado", objEscuela.Estado);
+                   micomando.Parameters.AddWithValue("@pIdEscuela", objEscuela._IdEscuela);
+                    micomando.Parameters.AddWithValue("@pNombre", objEscuela._Nombre);
+                    micomando.Parameters.AddWithValue("@pDistritoEducativo", objEscuela._DistritoEducativo);
+                    micomando.Parameters.AddWithValue("@pRegional", objEscuela._Regional);
+                    micomando.Parameters.AddWithValue("@pCodigoMinerd", objEscuela._CodigoMinerd);
+                    micomando.Parameters.AddWithValue("@pDirector", objEscuela._Director);
+                    micomando.Parameters.AddWithValue("@pEstado", objEscuela._Estado);
 
                     mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                                  :"No se pudo actualizar correctamente los nuevos datos";

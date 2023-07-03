@@ -55,12 +55,12 @@ namespace CapaDatos
                 sqlCon.Open();
                 micomando.CommandType = CommandType.StoredProcedure;
 
-                micomando.Parameters.AddWithValue("@pIdPeriodo", objPeriodo.IdPeriodo);
-                micomando.Parameters.AddWithValue("@pPeriodoEscolar", objPeriodo.PeriodoEscolar);
-                micomando.Parameters.AddWithValue("@pSlogan", objPeriodo.Slogan);
-                micomando.Parameters.AddWithValue("@pDesde", objPeriodo.Desde);
-                micomando.Parameters.AddWithValue("@pHasta", objPeriodo.Hasta);
-                micomando.Parameters.AddWithValue("@pEstado ", objPeriodo.Estado);
+                micomando.Parameters.AddWithValue("@pIdPeriodo", objPeriodo._IdPeriodo);
+                micomando.Parameters.AddWithValue("@pPeriodoEscolar", objPeriodo._PeriodoEscolar);
+                micomando.Parameters.AddWithValue("@pSlogan", objPeriodo._Slogan);
+                micomando.Parameters.AddWithValue("@pDesde", objPeriodo._Desde);
+                micomando.Parameters.AddWithValue("@pHasta", objPeriodo._Hasta);
+                micomando.Parameters.AddWithValue("@pEstado ", objPeriodo._Estado);
 
                 mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                              : "No se pudo insertar correctamente los nuevos datos";
@@ -94,12 +94,12 @@ namespace CapaDatos
                         sqlCon.ConnectionString = Sistema_Conexion.miconexion;
                         SqlCommand micomando = new SqlCommand("PeriodoActualizar", sqlCon);
                         sqlCon.Open();
-                        micomando.Parameters.AddWithValue("@pIdPeriodo", objPeriodo.IdPeriodo);
-                        micomando.Parameters.AddWithValue("@pPeriodoEscolar", objPeriodo.PeriodoEscolar);
-                        micomando.Parameters.AddWithValue("@pSlogan", objPeriodo.Slogan);
-                        micomando.Parameters.AddWithValue("@pDesde", objPeriodo.Desde);
-                        micomando.Parameters.AddWithValue("@pHasta", objPeriodo.Hasta);
-                        micomando.Parameters.AddWithValue("@pEstado ", objPeriodo.Estado);
+                        micomando.Parameters.AddWithValue("@pIdPeriodo", objPeriodo._IdPeriodo);
+                        micomando.Parameters.AddWithValue("@pPeriodoEscolar", objPeriodo._PeriodoEscolar);
+                        micomando.Parameters.AddWithValue("@pSlogan", objPeriodo._Slogan);
+                        micomando.Parameters.AddWithValue("@pDesde", objPeriodo._Desde);
+                        micomando.Parameters.AddWithValue("@pHasta", objPeriodo._Hasta);
+                        micomando.Parameters.AddWithValue("@pEstado ", objPeriodo._Estado);
 
                         mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                                      :"No se pudo actualizar correctamente los nuevos datos";

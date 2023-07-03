@@ -15,7 +15,7 @@ namespace CapaDatos
     {
         // Definicion de los atributos de la clase
         private int IdCargo;
-        private string Cargo;
+        private string NombreCargo;
         private string Estado;
 
         // Creacion de un constructor vacío
@@ -30,7 +30,7 @@ namespace CapaDatos
         public CDCargo(int IdCargo, string Cargo, string Estado) 
         {
             this.IdCargo = IdCargo;
-            this.Cargo = Cargo;
+            this.NombreCargo = Cargo;
             this.Estado = Estado;
         }
 
@@ -43,10 +43,10 @@ namespace CapaDatos
             set { IdCargo = value; }
         }
 
-        public string _Cargo 
+        public string _NombreCargo 
         {
-            get { return Cargo; }
-            set { Cargo = value; }
+            get { return NombreCargo; }
+            set { NombreCargo = value; }
         }
 
         public string _Estado 
@@ -69,9 +69,9 @@ namespace CapaDatos
                 sqlCon.Open();
                 micomando.CommandType = CommandType.StoredProcedure;
 
-                micomando.Parameters.AddWithValue("@pIdCargo",objCargo.IdCargo);
-                micomando.Parameters.AddWithValue("@pCargo", objCargo.Cargo);
-                micomando.Parameters.AddWithValue("@pEstado",objCargo.Estado);
+                micomando.Parameters.AddWithValue("@pIdCargo",objCargo._IdCargo);
+                micomando.Parameters.AddWithValue("@pCargo", objCargo._NombreCargo);
+                micomando.Parameters.AddWithValue("@pEstado",objCargo._Estado);
 
                 mensaje = micomando.ExecuteNonQuery() == 1?"Insercion de datos completada correctamente"
                                                              :"No se pudo insertar correctamente los nuevos datos";
@@ -109,9 +109,9 @@ namespace CapaDatos
                 sqlCon.Open();
                 micomando.CommandType = CommandType.StoredProcedure;
 
-                micomando.Parameters.AddWithValue("@pIdCargo",objCargo.IdCargo);
-                micomando.Parameters.AddWithValue("@pCargo", objCargo.Cargo);
-                micomando.Parameters.AddWithValue("@pEstado",objCargo.Estado);
+                micomando.Parameters.AddWithValue("@pIdCargo",objCargo._IdCargo);
+                micomando.Parameters.AddWithValue("@pNombreCargo", objCargo._NombreCargo);
+                micomando.Parameters.AddWithValue("@pEstado",objCargo._Estado);
 
                 mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                              :"No se pudo actualizar correctamente los nuevos datos";

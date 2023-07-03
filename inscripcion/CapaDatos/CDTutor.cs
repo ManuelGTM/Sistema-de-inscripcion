@@ -38,6 +38,7 @@ namespace CapaDatos
 
         public int _IdTutor { get => IdTutor; set => IdTutor = value; }
         public string _Nombre { get => Nombre; set => Nombre = value; }
+        public string _Apellidos { get => Apellidos; set => Apellidos = value; }    
         public string _Cedula { get => Cedula; set => Cedula = value; }
         public string _Direccion { get => Direccion; set => Direccion = value; }
         public string _Telefono { get => Telefono; set => Telefono = value;}
@@ -57,13 +58,13 @@ namespace CapaDatos
                     sqlCon.Open();
                     micomando.CommandType = CommandType.StoredProcedure;
 
-                    micomando.Parameters.AddWithValue("@pIdTutor", objTutor.IdTutor);
-                    micomando.Parameters.AddWithValue("@pNombre", objTutor.Nombre);
-                    micomando.Parameters.AddWithValue("@pApellidos", objTutor.Apellidos);
-                    micomando.Parameters.AddWithValue("@pCedula", objTutor.Cedula);
-                    micomando.Parameters.AddWithValue("@pTelefono", objTutor.Telefono);
-                    micomando.Parameters.AddWithValue("@pDireccion", objTutor.Direccion);
-                    micomando.Parameters.AddWithValue("@pEstado", objTutor.Estado);
+                         micomando.Parameters.AddWithValue("@pIdTutor", objTutor._IdTutor);
+                        micomando.Parameters.AddWithValue("@pNombre", objTutor._Nombre);
+                        micomando.Parameters.AddWithValue("@pApellidos", objTutor._Apellidos);
+                        micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
+                        micomando.Parameters.AddWithValue("@pTelefono", objTutor._Telefono);
+                        micomando.Parameters.AddWithValue("@pDireccion", objTutor._Direccion);
+                        micomando.Parameters.AddWithValue("@pEstado", objTutor._Estado);
 
                     mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                                  : "No se pudo insertar correctamente los nuevos datos";
@@ -98,13 +99,13 @@ namespace CapaDatos
                         SqlCommand micomando = new SqlCommand("TutorActualizar", sqlCon);
                         sqlCon.Open();
 
-                         micomando.Parameters.AddWithValue("@pIdTutor", objTutor.IdTutor);
-                        micomando.Parameters.AddWithValue("@pNombre", objTutor.Nombre);
-                        micomando.Parameters.AddWithValue("@pApellidos", objTutor.Apellidos);
-                        micomando.Parameters.AddWithValue("@pCedula", objTutor.Cedula);
-                        micomando.Parameters.AddWithValue("@pTelefono", objTutor.Telefono);
-                        micomando.Parameters.AddWithValue("@pDireccion", objTutor.Direccion);
-                        micomando.Parameters.AddWithValue("@pEstado", objTutor.Estado);
+                         micomando.Parameters.AddWithValue("@pIdTutor", objTutor._IdTutor);
+                        micomando.Parameters.AddWithValue("@pNombre", objTutor._Nombre);
+                        micomando.Parameters.AddWithValue("@pApellidos", objTutor._Apellidos);
+                        micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
+                        micomando.Parameters.AddWithValue("@pTelefono", objTutor._Telefono);
+                        micomando.Parameters.AddWithValue("@pDireccion", objTutor._Direccion);
+                        micomando.Parameters.AddWithValue("@pEstado", objTutor._Estado);
 
                         mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                                      :"No se pudo actualizar correctamente los nuevos datos";

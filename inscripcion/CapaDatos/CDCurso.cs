@@ -75,11 +75,11 @@ namespace CapaDatos
                 sqlCon.Open();
                 micomando.CommandType = CommandType.StoredProcedure;
 
-                micomando.Parameters.AddWithValue("@pIdCurso", objCurso.IdCurso);
-                micomando.Parameters.AddWithValue("@pGrado", objCurso.Grado);
-                micomando.Parameters.AddWithValue("@pSeccion", objCurso.Seccion);
-                micomando.Parameters.AddWithValue("@pIdTutor", objCurso.IdTutor);
-                micomando.Parameters.AddWithValue("@pEstado", objCurso.Estado);
+                        micomando.Parameters.AddWithValue("@pIdCurso", objCurso._IdCurso);
+                        micomando.Parameters.AddWithValue("@pGrado", objCurso._Grado);
+                        micomando.Parameters.AddWithValue("@pSeccion", objCurso._Seccion);
+                        micomando.Parameters.AddWithValue("@pIdTutor", objCurso._IdTutor);
+                        micomando.Parameters.AddWithValue("@pEstado", objCurso._Estado);
 
                 mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                              : "No se pudo insertar correctamente los nuevos datos";
@@ -113,11 +113,11 @@ namespace CapaDatos
                         SqlCommand micomando = new SqlCommand("CursoActualizar", sqlCon);
                         sqlCon.Open();
                         micomando.CommandType = CommandType.StoredProcedure;
-                        micomando.Parameters.AddWithValue("@pIdCurso", objCurso.IdCurso);
-                        micomando.Parameters.AddWithValue("@pGrado", objCurso.Grado);
-                        micomando.Parameters.AddWithValue("@pSeccion", objCurso.Seccion);
-                        micomando.Parameters.AddWithValue("@pIdTutor", objCurso.IdTutor);
-                        micomando.Parameters.AddWithValue("@pEstado", objCurso.Estado);
+                        micomando.Parameters.AddWithValue("@pIdCurso", objCurso._IdCurso);
+                        micomando.Parameters.AddWithValue("@pGrado", objCurso._Grado);
+                        micomando.Parameters.AddWithValue("@pSeccion", objCurso._Seccion);
+                        micomando.Parameters.AddWithValue("@pIdTutor", objCurso._IdTutor);
+                        micomando.Parameters.AddWithValue("@pEstado", objCurso._Estado);
 
                         mensaje = micomando.ExecuteNonQuery() == 1?"Datos actualizados correctamente"
                                                                      :"No se pudo actualizar correctamente los nuevos datos";

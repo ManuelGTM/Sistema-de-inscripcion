@@ -68,15 +68,15 @@ namespace CapaDatos
                     sqlCon.Open();
                     micomando.CommandType = CommandType.StoredProcedure;
 
-                    micomando.Parameters.AddWithValue("@pIdEstudiante", objEstudiante.IdEstudiante);
-                    micomando.Parameters.AddWithValue("@pNombre", objEstudiante.Nombre);
-                    micomando.Parameters.AddWithValue("@pApellido", objEstudiante.Apellido);
-                    micomando.Parameters.AddWithValue("@pIdTutor", objEstudiante.IdTutor);
-                    micomando.Parameters.AddWithValue("@pIdCurso", objEstudiante.IdCurso);
-                    micomando.Parameters.AddWithValue("@pSexo", objEstudiante.Sexo);
-                    micomando.Parameters.AddWithValue("@pFechaNacimiento", objEstudiante.FechaNacimiento);
-                    micomando.Parameters.AddWithValue("@pDireccion", objEstudiante.Direccion);
-                    micomando.Parameters.AddWithValue("@pEstado", objEstudiante.Estado);
+                    micomando.Parameters.AddWithValue("@pIdEstudiante", objEstudiante._IdEstudiante);
+                    micomando.Parameters.AddWithValue("@pNombre", objEstudiante._Nombre);
+                    micomando.Parameters.AddWithValue("@pApellido", objEstudiante._Apellido);
+                    micomando.Parameters.AddWithValue("@pIdTutor", objEstudiante._IdTutor);
+                    micomando.Parameters.AddWithValue("@pIdCurso", objEstudiante._IdCurso);
+                    micomando.Parameters.AddWithValue("@pSexo", objEstudiante._Sexo);
+                    micomando.Parameters.AddWithValue("@pFechaNacimiento", objEstudiante._FechaNacimiento);
+                    micomando.Parameters.AddWithValue("@pDireccion", objEstudiante._Direccion);
+                    micomando.Parameters.AddWithValue("@pEstado", objEstudiante._Estado);
 
                     mensaje = micomando.ExecuteNonQuery() == 1 ? "Insercion de datos completada correctamente"
                                                                  : "No se pudo insertar correctamente los nuevos datos";
@@ -113,15 +113,15 @@ namespace CapaDatos
                         sqlCon.Open();
                         micomando.CommandType = CommandType.StoredProcedure;
 
-                        micomando.Parameters.AddWithValue("@pIdEstudiante", objEstudiante.IdEstudiante);
-                        micomando.Parameters.AddWithValue("@pNombre", objEstudiante.Nombre);
-                        micomando.Parameters.AddWithValue("@pApellido", objEstudiante.Apellido);
-                        micomando.Parameters.AddWithValue("@pIdTutor", objEstudiante.IdTutor);
-                        micomando.Parameters.AddWithValue("@pIdCurso", objEstudiante.IdCurso);
-                        micomando.Parameters.AddWithValue("@pSexo", objEstudiante.Sexo);
-                        micomando.Parameters.AddWithValue("@pFechaNacimiento", objEstudiante.FechaNacimiento);
-                        micomando.Parameters.AddWithValue("@pDireccion", objEstudiante.Direccion);
-                        micomando.Parameters.AddWithValue("@pEstado", objEstudiante.Estado);
+                        micomando.Parameters.AddWithValue("@pIdEstudiante", objEstudiante._IdEstudiante);
+                        micomando.Parameters.AddWithValue("@pNombre", objEstudiante._Nombre);
+                        micomando.Parameters.AddWithValue("@pApellido", objEstudiante._Apellido);
+                        micomando.Parameters.AddWithValue("@pIdTutor", objEstudiante._IdTutor);
+                        micomando.Parameters.AddWithValue("@pIdCurso", objEstudiante._IdCurso);
+                        micomando.Parameters.AddWithValue("@pSexo", objEstudiante._Sexo);
+                        micomando.Parameters.AddWithValue("@pFechaNacimiento", objEstudiante._FechaNacimiento);
+                        micomando.Parameters.AddWithValue("@pDireccion", objEstudiante._Direccion);
+                        micomando.Parameters.AddWithValue("@pEstado", objEstudiante._Estado);
 
                        mensaje = micomando.ExecuteNonQuery() == 1 ? "Datos actualizados correctamente"
                                                              : "No se pudo actualizar correctamente los nuevos datos";
