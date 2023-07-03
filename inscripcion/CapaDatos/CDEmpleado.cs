@@ -70,7 +70,6 @@ namespace CapaDatos
                     sqlCon.Open();
                     micomando.CommandType = CommandType.StoredProcedure;
 
-                    micomando.Parameters.AddWithValue("@pIdEmpleado", objEmpleado._IdEmpleado);
                     micomando.Parameters.AddWithValue("@pNombre", objEmpleado._Nombre);
                     micomando.Parameters.AddWithValue("@pApellidos", objEmpleado._Apellidos);
                     micomando.Parameters.AddWithValue("@pCedula", objEmpleado._Cedula);
@@ -143,7 +142,7 @@ namespace CapaDatos
                 }
 
 
-         public string DataTableEmpleado(string miparametro)
+         public DataTable DataTableEmpleado(string miparametro)
             {
                 DataTable dt = new DataTable(); // Creacion de la tabla que muestra el cargo
                 SqlDataReader leerDatos; //Creacion del data Reader
@@ -166,12 +165,14 @@ namespace CapaDatos
                 }
                
 
-                return $"{dt}";
+                return dt;
         }
-
 
 
 
 
     }
 }
+
+
+

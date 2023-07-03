@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CNEmpleado.cs" />
+    <Compile Include="CNCargo.cs" />
+    <Compile Include="CNInscripcion.cs" />
+    <Compile Include="CNTutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

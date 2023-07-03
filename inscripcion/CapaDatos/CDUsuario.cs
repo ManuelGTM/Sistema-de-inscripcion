@@ -128,7 +128,7 @@ namespace CapaDatos
             return "";
         }            
 
-        public string DataTableUsuario(string miparametro)
+        public DataTable DataTableUsuario(string miparametro)
         {
                 DataTable dt = new DataTable(); // Creacion de la tabla que muestra el cargo
                 SqlDataReader leerDatos; //Creacion del data Reader

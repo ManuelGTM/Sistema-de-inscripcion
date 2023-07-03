@@ -135,7 +135,7 @@ namespace CapaDatos
                 }
 
 
-         public string DataTableInscripcion(string miparametro)
+         public DataTable DataTableInscripcion(string miparametro)
             {
                 DataTable dt = new DataTable(); // Creacion de la tabla que muestra el cargo
                 SqlDataReader leerDatos; //Creacion del data Reader
@@ -158,7 +158,7 @@ namespace CapaDatos
                 }
                
 
-                return $"{dt}";
+                return dt;
         }
 
 
