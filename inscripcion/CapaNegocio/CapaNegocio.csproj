@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNEscuela.cs" />
+    <Compile Include="CNEstudiante.cs" />
+    <Compile Include="CNCurso.cs" />
     <Compile Include="CNEmpleado.cs" />
     <Compile Include="CNCargo.cs" />
     <Compile Include="CNInscripcion.cs" />
+    <Compile Include="CNPeriodo.cs" />
     <Compile Include="CNTutor.cs" />
+    <Compile Include="CNUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

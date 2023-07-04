@@ -27,6 +27,7 @@ namespace CapaNegocio
         {
              
             CDCargo objCargo = new CDCargo();
+            objCargo._IdCargo = IdCargo;
             objCargo._NombreCargo = NombreCargo;
             objCargo._Estado = Estado;
 

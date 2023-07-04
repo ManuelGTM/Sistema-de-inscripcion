@@ -18,6 +18,11 @@ namespace CapaDatos
         private string Desde;
         private string Hasta; 
         private string Estado;
+       
+        public CDPeriodo()
+        {
+
+        }
 
 
         public CDPeriodo(int IdPeriodo, string PeriodoEscolar, string Slogan, string Desde, string Hasta, string Estado)

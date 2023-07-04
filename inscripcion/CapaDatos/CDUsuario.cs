@@ -151,7 +151,7 @@ namespace CapaDatos
                 }
                
 
-                return $"{dt}";
+                return dt;
         }
 
 

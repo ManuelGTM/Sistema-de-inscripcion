@@ -140,7 +140,7 @@ namespace CapaDatos
                 }
 
 
-         public string DataTableCurso(string miparametro)
+         public DataTable DataTableCurso(string miparametro)
             {
                 DataTable dt = new DataTable(); // Creacion de la tabla que muestra el cargo
                 SqlDataReader leerDatos; //Creacion del data Reader
@@ -161,10 +161,10 @@ namespace CapaDatos
                 {
                     dt = null; //si ocurre un erro se anula el DataTable
                 }
-               
 
-                return $"{dt}";
-        }
+
+            return dt; 
+       }
 
 
 
