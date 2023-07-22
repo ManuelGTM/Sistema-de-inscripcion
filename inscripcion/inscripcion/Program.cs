@@ -11,6 +11,9 @@ namespace Sistema_de_inscripcion
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+       /// 
+        public static int vIdEmpleado = 0;
+
         [STAThread]
         static void Main()
         {

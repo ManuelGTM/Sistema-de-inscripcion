@@ -1,4 +1,5 @@
-﻿using System;
+﻿using inscripcion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,8 @@ namespace Sistema_de_inscripcion
 
         private void periodoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FMantenimientoUsuario FMantUsuario = new FMantenimientoUsuario();
+            FMantUsuario.ShowDialog();
         }
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,12 +36,15 @@ namespace Sistema_de_inscripcion
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-
+            FMantenimientoTutor fMantTutor = new FMantenimientoTutor();
+            fMantTutor.ShowDialog();
         }
 
         private void tutorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+           FMantenimientoTutor fMantTutor = new FMantenimientoTutor();
+            fMantTutor.ShowDialog();
         }
 
         private void porPeriodoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,6 +88,35 @@ namespace Sistema_de_inscripcion
         private void utilidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void estudianteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FMantenimientoEstudiante fMantEstudiante = new FMantenimientoEstudiante();
+            fMantEstudiante.ShowDialog();
+        }
+
+        private void empleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FMantenimientoEmpleado fMantEmpleado = new FMantenimientoEmpleado();
+            fMantEmpleado.ShowDialog();
+        }
+
+        private void inscripcionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PInscripcionEstudiante pInscripcion = new PInscripcionEstudiante();
+            pInscripcion.ShowDialog(); 
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FMantenimientoCurso FMantCurso = new FMantenimientoCurso();
+            FMantCurso.ShowDialog();
+        }
+
+        private void periodoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
