@@ -474,7 +474,6 @@
             this.Name = "FMantenimientoUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento- Usuario";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FMantenimientoUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

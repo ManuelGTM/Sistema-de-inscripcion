@@ -436,7 +436,6 @@
             this.Name = "FMantenimientoTutor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento- Tutor";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FMantenimientoTutor_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -464,7 +464,6 @@
             this.MaximizeBox = false;
             this.Name = "FMantenimientoEmpleado";
             this.Text = "Mantenimiento- Empleado";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FMantenimientoEmpleado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

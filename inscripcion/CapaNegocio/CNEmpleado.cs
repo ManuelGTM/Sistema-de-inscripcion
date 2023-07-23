@@ -18,7 +18,7 @@ using CapaDatos;
 namespace CapaNegocio
 {
     public class CNEmpleado{
-        public static string InsertarEmpleado(string Nombre, string Apellidos, string Cedula, string Telefono, string Direccion, int IdDepartamento, int IdCargo, string Estado)
+        public static string InsertarEmpleado(string Nombre, string Apellidos, string Cedula, string Telefono, string Direccion, int IdCargo, string Estado)
         {
 
                 CDEmpleado objEmpleado = new CDEmpleado();
@@ -27,7 +27,6 @@ namespace CapaNegocio
                 objEmpleado._Cedula = Cedula;
                 objEmpleado._Telefono = Telefono;
                 objEmpleado._Direccion = Direccion;
-                objEmpleado._IdDepartamento = IdDepartamento;
                 objEmpleado._IdCargo = IdCargo;
                 objEmpleado._Estado = Estado;
 
@@ -35,7 +34,7 @@ namespace CapaNegocio
 
         }
 
-        public static string ActualizarEmpleado(int IdEmpleado, string Nombre, string Apellidos, string Cedula, string Telefono, string Direccion, int IdDepartamento, int IdCargo, string Estado)
+        public static string ActualizarEmpleado(int IdEmpleado, string Nombre, string Apellidos, string Cedula, string Telefono, string Direccion, int IdCargo, string Estado)
         {
 
             CDEmpleado objEmpleado = new CDEmpleado();
@@ -45,7 +44,6 @@ namespace CapaNegocio
             objEmpleado._Cedula = Cedula;
             objEmpleado._Telefono = Telefono;
             objEmpleado._Direccion = Direccion;
-            objEmpleado._IdDepartamento = IdDepartamento;
             objEmpleado._IdCargo = IdCargo;
             objEmpleado._Estado = Estado;
 

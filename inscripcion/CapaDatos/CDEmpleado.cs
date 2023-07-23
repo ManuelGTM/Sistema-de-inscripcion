@@ -21,7 +21,6 @@ namespace CapaDatos
         private string Cedula;
         private string Telefono;
         private string Direccion;
-        private int IdDepartamento;
         private int IdCargo;
         private string Estado;
 
@@ -29,7 +28,7 @@ namespace CapaDatos
         {
         }
 
-        public CDEmpleado(int Empleado, string Nombre, string Apellidos, string Cedula, string Telefono ,string Direccion, int IdDepartamento, int IdCargo, string Estado) {
+        public CDEmpleado(int Empleado, string Nombre, string Apellidos, string Cedula, string Telefono ,string Direccion, int IdCargo, string Estado) {
 
             this.IdEmpleado = Empleado;
             this.Nombre = Nombre;
@@ -37,7 +36,6 @@ namespace CapaDatos
             this.Cedula = Cedula;
             this.Telefono = Telefono;
             this.Direccion = Direccion;
-            this.IdDepartamento = IdDepartamento;
             this.IdCargo = IdCargo;
             this.Estado = Estado;
         }
@@ -50,7 +48,6 @@ namespace CapaDatos
         public string _Cedula { get => Cedula; set => Cedula = value; }
         public string _Telefono { get => Telefono; set => Telefono = value;}
         public string _Direccion { get => Direccion; set => Direccion = value; }
-        public int _IdDepartamento { get => IdDepartamento; set => IdDepartamento = value;}
         public int _IdCargo { get => IdCargo; set => IdCargo = value; }
         public string _Estado { get => Estado; set => Estado = value; }
 
@@ -75,7 +72,6 @@ namespace CapaDatos
                     micomando.Parameters.AddWithValue("@pCedula", objEmpleado._Cedula);
                     micomando.Parameters.AddWithValue("@pTelefono", objEmpleado._Telefono);
                     micomando.Parameters.AddWithValue("@pDireccion", objEmpleado._Direccion);
-                    micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado._IdDepartamento);
                     micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado._IdCargo);
                     micomando.Parameters.AddWithValue("@pEstado", objEmpleado._Estado);
 
@@ -117,7 +113,6 @@ namespace CapaDatos
                         micomando.Parameters.AddWithValue("@pCedula", objEmpleado._Cedula);
                         micomando.Parameters.AddWithValue("@pTelefono", objEmpleado._Telefono);
                         micomando.Parameters.AddWithValue("@pDireccion", objEmpleado._Direccion);
-                        micomando.Parameters.AddWithValue("@pIdDepartamento", objEmpleado._IdDepartamento);
                         micomando.Parameters.AddWithValue("@pIdCargo", objEmpleado._IdCargo);
                         micomando.Parameters.AddWithValue("@pEstado", objEmpleado._Estado);
 
