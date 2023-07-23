@@ -463,6 +463,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
             this.Name = "FMantenimientoEmpleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mantenimiento- Empleado";
             this.Load += new System.EventHandler(this.FMantenimientoEmpleado_Load);
             this.panel1.ResumeLayout(false);
